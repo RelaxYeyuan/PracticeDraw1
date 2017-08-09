@@ -9,6 +9,8 @@ import android.view.View;
 
 public class Practice5DrawOvalView extends View {
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     public Practice5DrawOvalView(Context context) {
         super(context);
     }
@@ -26,7 +28,7 @@ public class Practice5DrawOvalView extends View {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawOval() 方法画椭圆
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
         canvas.drawOval(200, 200, 400, 300, paint);
     }
 }

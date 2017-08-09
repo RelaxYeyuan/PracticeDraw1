@@ -11,6 +11,7 @@ import android.view.View;
 public class Practice9DrawPathView extends View {
 
     Path path = new Path(); // 初始化 Path 对象
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     {
         // 使用 path 对图形进行描述（这段描述代码不必看懂）
@@ -37,7 +38,7 @@ public class Practice9DrawPathView extends View {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawPath() 方法画心形
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
         canvas.drawPath(path, paint);
     }
 }

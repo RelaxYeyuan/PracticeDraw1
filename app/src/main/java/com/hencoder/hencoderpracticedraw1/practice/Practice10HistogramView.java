@@ -9,6 +9,10 @@ import android.util.AttributeSet;
 import android.view.View;
 
 public class Practice10HistogramView extends View {
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Paint paint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Paint paint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Paint paint3 = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     public Practice10HistogramView(Context context) {
         super(context);
@@ -29,19 +33,16 @@ public class Practice10HistogramView extends View {
 //        综合练习
 //        练习内容：使用各种 Canvas.drawXXX() 方法画直方图
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
         paint.setColor(Color.WHITE);
         paint.setStrokeWidth(2);
         canvas.drawLine(70, 400, 600, 400, paint);//横坐标直线
         canvas.drawLine(70, 400, 70, 100, paint);//纵坐标直线
 
-        Paint paint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint1.setTextSize(30);
         paint1.setColor(Color.WHITE);
         canvas.drawText("直方图", 300, 470, paint1);
 
-        Paint paint2 = new Paint(Paint.ANTI_ALIAS_FLAG);
-        Paint paint3 = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint3.setColor(Color.WHITE);
         paint3.setTextSize(20);
         paint2.setColor(Color.GREEN);

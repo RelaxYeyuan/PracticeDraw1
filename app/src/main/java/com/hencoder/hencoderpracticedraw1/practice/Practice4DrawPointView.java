@@ -9,6 +9,9 @@ import android.view.View;
 
 public class Practice4DrawPointView extends View {
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+    Paint paint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     public Practice4DrawPointView(Context context) {
         super(context);
     }
@@ -29,12 +32,10 @@ public class Practice4DrawPointView extends View {
 //        一个圆点，一个方点
 //        圆点和方点的切换使用 paint.setStrokeCap(cap)：`ROUND` 是圆点，`BUTT` 或 `SQUARE` 是方点
 
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setStrokeCap(Paint.Cap.ROUND);
         paint.setStrokeWidth(50);
         canvas.drawPoint(200, 200, paint);
 
-        Paint paint1 = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint1.setStrokeWidth(50);
         paint1.setStrokeCap(Paint.Cap.SQUARE);
         canvas.drawPoint(500, 200, paint1);

@@ -9,6 +9,8 @@ import android.view.View;
 
 public class Practice3DrawRectView extends View {
 
+    Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
+
     public Practice3DrawRectView(Context context) {
         super(context);
     }
@@ -26,7 +28,6 @@ public class Practice3DrawRectView extends View {
         super.onDraw(canvas);
 
 //        练习内容：使用 canvas.drawRect() 方法画矩形
-        Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         canvas.drawRect(200, 200, 400, 400, paint);
     }
 }
